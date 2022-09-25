@@ -1,0 +1,11 @@
+ make a server 
+create header and api body 
+create api with static data 
+put data in onother file 
+
+>const http =require(http);
+>http.createserver((req , resp)=>{
+resp.writehead(200 , {'content-type' : 'application\json'});
+resp.write(JSON.stringify{name : 'Rishabh'}));
+resp.end();
+}).listen(4000);
